@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--使用最高级别的可用模式显示内容-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--移动端的视窗大小和我们的页面是同一尺寸-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>美伢集_MIUYAS_编辑</title>
+	<link rel="shortcut icon" href="images/icon3.png">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/index.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/editor.css">
+	
+	<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+	<script src="./js/showPic.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script src="./js/connect.js"></script>
+	<!-- <script src="./js/index_MIU.js"></script> -->
+	<script type="text/javascript" src="./js/editor.js"></script>
+	<script src="./js/ajaxfileupload.js"></script>
+
+
+
+
+</head>
+<body>
+<div id="all_content">
+	<div class="left_content">
+		<div class="container_miuyas">
+			<a href="MIUYAS.html">首页</a>
+
+		</div>
+		<ul>
+			<li><img src="images/write1.png">&nbsp;&nbsp;<a id="new" href="javascript:addtype()">新建文章</a></li>
+		</ul>
+
+
+	</div>
+	<div class=" tab-content right_content " >
+		<div class="header">
+			<ul>
+				<li><i title="加粗" class="bloder_B">B</i></li>
+				<li><i title="斜体">I</i></li>
+				<li><div class="dropdown font">
+					<!--按钮部分   获焦失焦等事件由它完成-->
+					<!-- <button  class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >
+						字体
+						<span class="caret"></span>
+					</button>
+					<ul  class="dropdown-menu font_show">
+						<li><a href="#">微软雅黑</a></li>
+						<li><a href="#">宋体</a></li>
+						<li><a href="#">细明体</a></li>
+						<li><a href="#">標楷體</a></li>
+						<li><a href="#">隶书</a></li>
+						<li><a href="#">幼圆</a></li>
+						<li><a href="#">STXingkai</a></li>
+					</ul> -->
+					<form class="font_fam_form">
+						<select>
+							<option>SimSun</option>
+							<option>微软雅黑</option>
+							<option>MingLiU</option>
+							<option>DFKai-SB</option>
+							<option>MingLiU</option>
+						</select> 
+					</form>
+				</div></li>
+				<li class="input_bg"><input id="to" name="files" type="file" class="file_chose" multiple accept="images/*" onchange="setImagePreving(this,'xe')"></li>
+				<li><input type="color" class="color_chose"></li>
+				<li><div class="size">
+					<!--按钮部分   获焦失焦等事件由它完成-->
+					<form class="font_size_form">
+						<select>
+							<option>12</option>
+							<option>14</option>
+							<option>18</option>
+							<option>20</option>
+							<option>24</option>
+							<option>26</option>
+							<option>30</option>
+						</select> 
+					</form>
+				</div></li>
+			</ul>
+			<ul class="right_ul_show">
+				<li id="save" onclick="save()">保存</li>
+				<li id="publish" onclick="addpush()">发表</li>
+				<li>类型：<select name="tid" id="tid"></select></li>
+			</ul>
+		</div>
+		<div id="wq" class="content">
+			<form>
+				<label  class="title_pic"><p id="pic">请添加封面图</p><input type="file" name="file" onchange="setImagePreviews(this,'pic')" accept="images/*" id="imagesss" multiple></label>
+				<label class="title_name"><input type="text" placeholder="请添加标题" id="title" name="text"></label>
+				<label class="title_daoyu"><input type="text" placeholder="请输入导语" id="daoyu" name="text_two" ></label>
+				<div class="content_zw" id="xe" contenteditable="true">
+					<p>&#8203;</p>
+				</div>
+			</form>
+
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var flag=true;
+	$(".font_size_form select").change(function(){
+	 	var fontS=$(".font_size_form select").val();
+	 	var fonyF=$(".font_fam_form select").val();
+		$("#xe p").css({"font-size":fontS+"px","font-family":fonyF});
+	 })
+	$(".font_fam_form select").change(function(){
+		var fontS=$(".font_size_form select").val();
+		var fonyF=$(".font_fam_form select").val();
+		$("#xe p").css({"font-size":fontS+"px","font-family":fonyF});
+	})
+	
+	if(flag){
+		$(".bloder_B").click(function(){
+			alert("cdsgfs");
+			$("#xe p").css("font-weight","600");
+		})
+
+	}else{
+		$(".bloder_B").click(function(){
+			alert("xxxxxxxx");
+			$("#xe p").css("font-weight","200");
+		})
+	}
+	
+	$(".color_chose").change(function(){
+		var color=$(".color_chose").val()
+		$("#xe p").css("color",color);
+	})
+</script>
+</body>
+</html>

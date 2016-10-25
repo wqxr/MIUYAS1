@@ -1,0 +1,230 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+
+body {
+	background-color: #F7F7F7;
+	color: #333;
+	font-family: Helvetica, sans-serif;
+	position:relative;
+	width:100%;
+	font-family: "DFKai-SB";
+	
+}
+#book{
+	position:relative;
+	width:1276px;
+	height:600px;
+	left:30px;
+	cursor: pointer;
+	margin-top: 30px;
+}
+#d1{
+	display: block;
+	width: 600px;
+	height:580px;
+	position:absolute;
+	left:20px;
+	top:20px;
+	overflow: hidden;
+	z-index:100;
+	text-align: center;
+	padding-left: 10px;
+}
+#d1 p{
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: center;
+	font-weight:bolder;
+	line-height: 50px;
+}
+.img_show_div{
+		width: 600px;
+		height: 400px;
+		
+}
+.img_show_div img{
+	width: 30%;
+	height: 50%;
+}
+#book>img{
+	position: absolute;
+	width:100%;
+	height:inherit;
+	left:0px;
+	top:0px;
+	/*margin-left: -400px;
+	margin-top: 125px;*/
+}
+#pages{
+	height:100px;
+}
+
+#pages section {
+	background: url("../images/paper.png") no-repeat;
+	display: block;
+	width: 600px;
+	height:580px;
+	position: absolute;
+	left: 638px;
+	top: 10px;
+	overflow: hidden;
+	z-index:150;
+}
+
+
+
+
+.one{
+	width:600px;
+	height:580px;
+	position:relative;
+	border-bottom:1px dotted #ccc;
+	float:left;
+	margin-left:50px;
+	}
+h5{
+	position:absolute;
+	top:500px;
+	left:280px;
+}
+	#pages section p,
+	#pages section h3 {
+		padding: 3px 30px;
+		padding-top: 20px;
+		line-height: 1.4em;
+		text-align: justify;
+		margin: 10px 0 10px;
+		word-break: break-all;
+	}
+	
+
+#pageflip-canvas {
+	position: absolute;
+	z-index: 100;
+
+}
+pre{
+	font-family: "DFKai-SB";
+	font-size: 16px;
+	height: 75%;
+	width: 90%;
+	position: absolute;
+	top: 100px;
+	overflow:hidden;
+}
+#user_talking p{
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: center;
+}
+#user_talking ul li{
+	list-style: none;
+	line-height: 50px;
+	border-bottom:1px solid #ccc;
+	padding-left: 20px;
+}
+#user_talking ul li a{
+	text-decoration: none;
+	color: #333;
+	font-size: 20px;
+}
+
+.title_talk{
+	border-bottom:1px solid #666;
+	height: 50px;
+	width: 95%;
+	margin-top: 40px;
+	margin-left: 25px;
+	border-radius: 0px 0px 15px 15px;
+	overflow: hidden;
+}
+.talk_about,.zan_talk{
+	float: left;
+	border: 1px solid #666;
+	width: 100px;
+	border-radius:15px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px;
+}
+.zan_talk{
+	float: right;
+	cursor: pointer;
+}
+.bg_content_image{
+	width:100%;
+	height: 420px;
+	position: relative;
+	background: url(../images/bg/5.jpg) no-repeat center; 
+	background-size: cover;
+	margin-top: 5px;
+	
+}
+.main_content{
+	background: rgba(247,247,247,0.3);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: inherit;
+	height: 420px;
+	padding-top: 60px;
+	color: #333;
+}
+.blank{
+	border: 2px solid #666;
+	width:80%;
+	height: 300px;
+	margin-left: 120px;
+	position: relative;
+	font-size: 20px;
+	word-break: break-all;
+	padding: 15px;
+	border-radius: 15px;
+}
+.blank input{
+	position: absolute;
+	left: 80%;
+	bottom: 10px;
+	width: 80px;
+	line-height: 30px;
+	border:2px solid #fff;
+	background: rgba(0,0,0,0.8);
+	border-radius: 10px;
+	cursor: pointer;
+	color: #fff;
+}
+.blank input:hover{
+	background: rgba(237,121,98,0.8);
+}
+.talk_address{
+	width: 100%;
+	padding-left:100px;
+}
+.talk_address>div{
+	width:80%;
+	margin-top: 15px;
+}
+.talk_address>div p{
+	font-size: 24px;
+}
+
+.talk_address .content_talk{
+	width: 90%;
+	height: 100px;
+	border-bottom:  1px solid #666;
+	margin-left: 120px;
+	font-size: 20px;
+}
+.content_talk{
+	/*color: #fff;*/
+	position: relative;
+}
+.content_talk span{
+	color: #666;
+	position: absolute;
+	top:70%;
+	left: 80%;
+	font-size: 16px;
+}

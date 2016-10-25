@@ -1,0 +1,361 @@
+*{
+	padding:0px;
+	margin:0px auto;
+	overflow-x:hidden;
+	}
+body{
+	/*width:1350px;*/
+	height:auto;
+	}
+header .head{
+	width:1350px;
+	}
+.head img{
+	height:120px;
+	}
+.logo {
+    background-image: url("http://www.lady8844.com/images/common_2015/logo1.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 70px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 328px;
+	float:left;
+	margin-top:20px;
+}
+.d1{
+	clear:both;
+	height:2px;
+	background:black;
+	}
+#d2{
+	width:1350px;
+	height:480px;
+	position:relative;
+	overflow:hidden;
+	}
+
+#left{
+	z-index:100;
+	opacity:0.5;
+	background:black;
+	height:480px;
+	width:80px;
+	left:0px;
+	top:0px;
+	position:absolute;
+}
+#right{
+	z-index:101;
+	opacity:0.5;
+	background:black;
+	height:480px;
+	width:100px;
+	left:1250px;
+	top:0px;
+	position:absolute;
+}
+#bottom{
+	z-index:101;
+	opacity:0.5;
+	background:black;
+	height:80px;
+	width:1180px;
+	bottom:0px;
+	left:80px;
+	position:absolute;
+}
+#bottom p{
+	width:600px;
+	margin:0px auto;
+	font-size:30px;
+	font-weight:bold;
+	z-index:120;
+	color:white;
+	}
+
+ #d2 ul{
+	width:800%;
+	left:0px;
+	top:0px;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	-webkit-animation:move 20s linear infinite;
+	}
+	@-webkit-keyframes move{
+		0%{
+			left:0px;
+			}
+		100%{
+			left:-3020px;
+			}
+
+		}
+	#d2 ul li{
+		list-style:none;
+		width:1080px;
+		height:480px;
+		float:left;
+
+		}
+	#d2:hover ul{
+		-webkit-animation-play-state:paused;
+		}
+#d3{
+	margin-top:20px;
+	height:30px;
+	border-bottom:2px solid #CCC;
+	width:800px;
+	float:left;
+	margin-left:100px;
+	}
+.hufu{
+	clear:both;
+	font-size:30px;
+	color:#900;
+	font-weight:bold;
+	margin-left:100px;
+	margin-top:50px;
+	}
+#total{
+	width:1200px;
+	height:auto;
+	position:relative;
+	border:1px solid #CCC;
+	}
+#total p{
+	color:#999;
+	margin-top:10px;
+	}
+#total img{
+	position:absolute;
+	left:10px;
+	top:10px;
+	}
+#one{
+	width:60%;
+	height:340px;
+	position:relative;
+	border:1px solid #CCC;
+	float:left;
+	}
+
+#one dl dt img{
+	width:330px;
+	height:300px;
+
+	}
+#one dl dd {
+	position:absolute;
+
+	left:370px;
+	top:10px;
+	}
+
+#two{
+	margin-left:10px;
+	width:38%;
+	height:340px;
+	position:relative;
+	border:1px solid #CCC;
+	float:left;
+	}
+#two dl dt img{
+	width:200px;
+	height:296px;
+
+	}
+#two dl dd{
+	position:absolute;
+	left:240px;
+	top:10px;
+	}
+#three{
+	width:28%;
+	height:570px;
+	margin-top:20px;
+	position:relative;
+	float:left;
+	border:1px solid #CCC;
+	}
+#three dl dt img{
+	width:300px;
+	height:300px;
+
+	}
+#three dl dd{
+	position:absolute;
+	left:20px;
+	top:340px;
+	}
+#four{
+	width:42%;
+	height:330px;
+	float:left;
+	margin-left:10px;
+	position:relative;
+	border:1px solid #ccc;
+	margin-top:20px;
+	}
+#four dl dt img{
+	width:200px;
+	height:293px;
+	}
+
+#four dl dd{
+	position:absolute;
+	left:230px;
+	top:10px;
+	}
+#five{
+	width:27%;
+	height:570px;
+	float:left;
+	margin-left:10px;
+	position:relative;
+	border:1px solid #ccc;
+	margin-top:20px;
+	}
+#five dl dt img{
+	width:90%;
+	height:540px;
+	}
+#five dl dd{
+	width:90%;
+	background:black;
+	opacity:0.5;
+	position:absolute;
+	bottom:20px;
+	left:10px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	overflow:hidden;
+
+}
+#five dl dd:hover{
+	height:100px;
+	-webkit-transition:width 3s linear;
+	}
+#five dl dd strong{
+	color:white;
+	z-index:103;
+	}
+#five dl dd p{
+	color:white;
+	z-index:103;
+	}
+
+#six{
+	width:42%;
+	height:230px;
+	position:absolute;
+	top:700px;
+	left:345px;
+	border:1px solid #ccc;
+	}
+#six dl dt img{
+	width:200px;
+	height:200px;
+	float:left;
+	}
+#six dl dd{
+	width:50%;
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+	}
+#seven{
+	width:52%;
+	height:350px;
+	position:relative;
+	border:1px solid #CCC;
+	float:left;
+	margin-top:20px;
+	}
+#seven dl dt img{
+	width:200px;
+	height:300px;
+}
+#seven dl dd{
+	position:absolute;
+	left:220px;
+	top:10px;
+	margin-left:10px;
+	}
+#eight{
+	width:46%;
+	height:440px;
+	position:relative;
+	border:1px solid #CCC;
+	float:left;
+	margin-top:20px;
+	margin-left:10px;
+	}
+#eight dl dt img{
+	width:95%;
+	height:400px;
+	}
+#eight dl dd{
+	width:95%;
+	background:black;
+	opacity:0.5;
+	position:absolute;
+	bottom:28px;
+	left:10px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	overflow:hidden;
+	}
+
+#eight dl dd:hover{
+	height:100px;
+	-webkit-transition:width 5s linear;
+	}
+#eight dl dd strong{
+	color:white;
+	z-index:103;
+	}
+#eight dl dd p{
+	color:white;
+	z-index:103;
+	}
+
+#nine{
+	width:52%;
+	height:320px;
+	position:relative;
+	border:1px solid #CCC;
+	float:left;
+	margin-top:-80px;
+}
+#nine dl dt img{
+	width:300px;
+	height:280px;
+	}
+#nine dl dd{
+	position:absolute;
+	left:330px;
+	top:10px;
+}
+#ten{
+	margin-top:10px;
+	width:46%;
+	height:230px;
+	position:relative;
+	border:1px solid #CCC;
+	float:right;
+	margin-right:12px;
+}
+#ten dl dt img{
+	width:45%;
+	height:200px;
+	}
+#ten dl dd{
+	position:absolute;
+	left:280px;
+	top:10px;
+		}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--使用最高级别的可用模式显示内容-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--移动端的视窗大小和我们的页面是同一尺寸-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>美伢集_MIUYAS</title>
+	<link rel="shortcut icon" href="images/icon3.png">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	
+
+</head>
+<body>
+	<audio autoplay="autopaly" loop="loop">
+					<source src="曲婉婷 - Hand Hold.mp3" type="audio/mp3" />
+	</audio>  
+	<div>
+		<p id="word"></p>
+		<p id="word_two"></p>
+		<img src="images/index_enter.png" id="enter_img">
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script type="text/javascript" src="./js/lhz4.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.fn.showPic({
+				minSize:5,
+				maxSize:50,
+				newOn:1000,
+				flakeColor:'pink',
+				flakeChar:"❆"
+			})
+		})
+	</script>
+</body>
+</html>
